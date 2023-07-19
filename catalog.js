@@ -200,6 +200,16 @@ function translateToEN() {
         }
     }
 
+    let hiddenCards = document.getElementsByClassName("card-hidden");
+    for (let i = 0; i < hiddenCards.length; i++) {
+        for (const [key, value] of Object.entries(dropdownReservedValues)) {
+            while (hiddenCards[i].innerHTML.includes(key)) {
+                hiddenCards[i].innerHTML = hiddenCards[i].innerHTML.replace(key, value);
+            }
+        }
+    }
+
+
     let descriptionsEN = document.getElementsByClassName("card-discription-text-en");
     let descriptionsRU = document.getElementsByClassName("card-discription-text");
     for (let i = 0; i < descriptionsEN.length; i++)
