@@ -151,7 +151,7 @@ const catalogValues = {
     "VOYAH FREE — автомобиль, сочетающий в себе высокие технологии и заботу об окружающей среде. По дизайну он напоминает роскошную яхту — чистота линий и минимум элементов. Коэффициент лобового сопротивления 0,28 обеспечивает высокую аэродинамику.": "VOYAH FREE is a car that combines high technology and care for the environment. By design, it resembles a luxury yacht - clean lines and a minimum of elements. A drag coefficient of 0.28 ensures high aerodynamics.",
 }
 
-// translateDynamic(); not an optimization
+
 
 if (document.URL.includes("catalog-en")) {
     console.log(document.URL);
@@ -179,10 +179,12 @@ function translateToEN() {
 
     // детальніше
     let more = document.getElementsByClassName('btn-text');
+    let aLinks = document.getElementsByClassName('blue-gradient');
     for (let i = 0; i < more.length; i++) {
         more[i].textContent = (more[i].textContent in reservedValues ?
             reservedValues[more[i].textContent] :
             more[i].textContent);
+        aLinks[i].setAttribute("href", aLinks[i].getAttribute("href") + "?lang=en");
     }
 
     let dropdownReservedValues = {
