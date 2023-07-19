@@ -153,7 +153,7 @@ const catalogValues = {
 
 // translateDynamic(); not an optimization
 
-if (document.URL.includes("catalog-en")) {
+if (document.URL.includes("eng")) {
     console.log(document.URL);
     translateToEN();
 }
