@@ -1074,11 +1074,20 @@ function translateToEN() {
         }
     }
 
-    let specificationDiv = document.getElementsByClassName("car-characteristics-title-wrapper")[0];
-    let specificationTitle = specificationDiv.getElementsByTagName("h2")[0];
-    for (const [key, value] of Object.entries(reservedValues)) {
-        if (specificationTitle.textContent.includes(key)) {
-            specificationTitle.textContent = specificationTitle.textContent.replace(key, value);
+    let dropdownNodeTitles = document.getElementsByClassName("characteristics-car-name-title");
+    for (let i = 0; i < dropdownNodeTitles.length; i++) {
+        for (const [key, value] of Object.entries(reservedValues)) {
+            while (dropdownNodeTitles[i].innerHTML.includes(key)) {
+                dropdownNodeTitles[i].innerHTML = dropdownNodeTitles[i].innerHTML.replace(key, value);
+            }
+        }
+    }
+    let dropdownNodeTitles2 = document.getElementsByClassName("car-characteristics-name-title");
+    for (let i = 0; i < dropdownNodeTitles2.length; i++) {
+        for (const [key, value] of Object.entries(reservedValues)) {
+            while (dropdownNodeTitles2[i].innerHTML.includes(key)) {
+                dropdownNodeTitles2[i].innerHTML = dropdownNodeTitles2[i].innerHTML.replace(key, value);
+            }
         }
     }
 
