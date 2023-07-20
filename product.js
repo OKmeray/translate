@@ -141,23 +141,14 @@ let reservedTableRowTitles = {
     "Снаряженная масса": "Curb weight",
 
     // measurements
-	"при": "at",
-	"ПРИ": "at",
-	"При": "at",
-    "л.с.": "hp",
-	"лс": "hp",
-	"к.с.": "hp",
-    "об/мин": "rpm",
-	"об./мин.": "rpm",
-	"(л)": "(l)",
-	"(мм)": "(mm)",
-	"(кг)": "(kg)",
-	"(л.с.)": "(hp)",
-	"(кВт)": "(kW)",
-	"(км/ч)": "(km/h)",
-	"(кВт/ч)": "(kW/h)",
-	"об./кВт": "rev/kW",
-	"(часов)": "(hours)",
+    "(л)": "(l)",
+    "(мм)": "(mm)",
+    "(кг)": "(kg)",
+    "(л.с.)": "(hp)",
+    "(кВт)": "(kW)",
+    "(км/ч)": "(km/h)",
+    "(кВт/ч)": "(kW/h)",
+    "(часов)": "(hours)",
     
     // Основные характеристики
     "Полный": "AWD",
@@ -187,7 +178,6 @@ reservedValuesForTable = {
     "Родстер": "Roadster",
     "Кабриолет": "Cabriolet",
     "Купе": "Coupe",
-	"Купэ": "Coupe",
     "Универсал": "Station wagon",
 
     //Двигатель
@@ -245,97 +235,8 @@ reservedValuesForTable = {
     "Электронное": "Electronic",
     "Электрический": "Electric",
     "Электронный": "Electronic",
-	"AC/Асинхронный": "AC/Asynchronous",
-	"Независимая подвеска на двойных поперечных рычагах": "Independent double wishbone suspension",
-	"Независимая - многорычажная": "Independent - multi-link",
-	"Независимая, MacPherson со стабилизатором": "Independent, MacPherson with stabilizer",
-	"Независимая, рычажно-пружинная с гидроамортизаторами": "Independent, lever-spring with hydraulic shock absorbers",
-	"Зависимая, многорычажная": "Dependent, multi-link",
-	"Вентилируемые диски": "Ventilated discs",
-	"Независимая McPherson": "Independent McPherson",
-	"Независимая, пружинная": "Independent, spring",
-	"Независимая, многорычажная": "Independent, multi-link",
-	"Спортивная": "Sportive",
-	"газовые амортизаторы": "Gas shock absorbers",
-	"стабилизатор поперечной стойкости": "roll stabilizer",
-	"Хибрид": "Hybrid",
-	"Свечная подвеска Макферсона": "MacPherson Candle Pendant",
-	"Торсион": "Torsion",
-	"Вентилируемый диск": "Ventilated disc",
-	"Литой диск": "Cast drive",
-
-	// Everything else
-	"Независимая - многорычажная": "Independent - multi-link",
-	"Пневматическая подвеска": "Air suspension",
-	"Стилизованная сталь": "Stylized steel",
-	"Четырехколесная независимая": "Four wheel independent",
-	"Газовый/электрический": "Gas/electric",
-	"Обычный": "Ordinary",
-	"Внедорожная": "Off-road",
-	"Многорычажная": "Multi-link",
-	"Disk с внутренним охлаждением": "Disk with internal cooling",
-	"Бензин": "Petrol",
-	"со стойками MacPherson": "with MacPherson struts",
-	"многорычажная": "multi-link",
-	"Disk невентилируемые": "Disk non-ventilated",
-	"Независимая - McPherson": "Independent - McPherson",
-	"Независимая, со стойками Мак-Ферсон": "Independent, with MacPherson struts",
-	"5-рычажная подвеска; трубчатый стабилизатор поперечной стойкости": "5-link suspension; tubular anti-roll bar",
-	"Полузависимая, торсионная балка": "Semi-dependent, torsion beam",
-	"пассажир": "passenger",
-	"Передние/Задние": "Front/Rear",
-	"Постоянный синхронный магнит": "Permanent synchronous magnet",
-	"асинхронный RWD постоянный магнит": "asynchronous RWD permanent magnet",
-	"Независимая подвеска на двойных поперечных рычагах": "Independent double wishbone suspension",
-	"Вентилируемый диск": "Ventilated disc",
-	"Торсионная балка независимо": "Torsion beam independently",
-	"LED пиксельный адаптивный": "LED pixel adaptive",
-	"Зависимая подвеска торсиона балка": "Torsion beam dependent suspension",
-	"LCD-экран": "LCD screen",
-	"Барабан": "Drum",
-	"Ручное": "Manual",
-	"Литий-железо-фосфатный": "Lithium iron phosphate",
-	"Независимо": "Independently",
-	"FWD ряд": "FWD series",
-	"Независимая с торсионной балкой на продольных рычагах": "Independent with trailing arm torsion beam",
-	"Независимая подвеска на двойных поперечных рычагах": "Independent double wishbone suspension",
-	"Первый ряд": "First row",
-	"Второй ряд": "Second row",
-	"Замша": "Suede",
-	"Литий-железо-фосфатный": "Lithium iron phosphate",
-	"Асинхронный FWD индукционный": "Asynchronous FWD induction",
-	"Постоянный синхронный магнит": "Permanent synchronous magnet",
-	"Независимая подвеска на двойных поперечных рычагах": "Independent double wishbone suspension",
-	"Вентилируемый диск": "Ventilated disc",
-	"Матричный адаптивный": "Matrix adaptive",
-	"Первый и второй ряд": "First and second row",
-	"Независимая подвеска на продольных рычагах": "Trailing arm independent suspension",
-	"Асинхронный с переменным током": "AC asynchronous",
-	"Жидкое охлаждение": "Liquid cooling",
-	"Панорамная неоткрывающаяся крыша": "Panoramic fixed roof",
-	"Ситикар": "Citycar",
-	"Металлические": "Metal",
-	"Не открывающаяся панорама": "Non-opening panorama",
-	"Асинхронный": "Asynchronous",
-	"Сплошной диск": "Solid disk",
-	"Переменный ток": "Alternating current",
-	"Спортбек": "Sportback",
-	"Адаптивное": "Adaptive",
-	"Эко": "Eco",
-	"Асинхронный с переменным током": "AC asynchronous",
-	"Тройная литиевая": "Triple lithium",
-	"Матричный адаптивный": "Matrix adaptive",
-	"Постоянный магнит": "Permanent magnet",
-	"синхронный": "synchronous",
-	"FWD индукционный": "FWD induction",
-	"Независимая подвеска на двойных поперечных рычагах": "Independent double wishbone suspension",
-	"Сегментный неоткрывающийся": "Segment non-opening",
-	"FWD и rear ряд": "FWD and rear row",
-	"напа": "nappa",
-	"Независимая": "Independent",
-	"Газ": "Gas",
-	
-	//Мультимедиа
+    
+    //Мультимедиа
     "Нм": "Nm",
     "Цифровая": "Numeric",
     "Сенсорный LCD": "Touch LCD",
@@ -354,8 +255,7 @@ reservedValuesForTable = {
     "зоны": "zones",
     "Адаптивный на полной скорости": "Adaptive at full speed",
     "Адаптивный": "Adaptive",
-    "Задняя": "Rear", 
-	"Зеркало": "Mirror",            
+    "Задняя / Зеркало": "Rear / Mirror",             
     "Автосборка": "Autobuild",
     "Память": "Memory",
     "Открывающаяся панорама": "Opening panorama",
@@ -370,30 +270,9 @@ reservedValuesForTable = {
     "задняя": "rear",
     "задний": "rear",
 
-	// measurements
-	"Передние": "Front",
-	"Задние": "Rear",
-	"задние": "rear",
-	"при": "at",
-	"ПРИ": "at",
-	"При": "at",
+    "при": "at",
     "л.с.": "hp",
-	"лс": "hp",
-	"к.с.": "hp",
     "об/мин": "rpm",
-	"об./мин.": "rpm",
-	"(л)": "(l)",
-	"(мм)": "(mm)",
-	"(кг)": "(kg)",
-	"(л.с.)": "(hp)",
-	"(кВт)": "(kW)",
-	"(км/ч)": "(km/h)",
-	"(кВт/ч)": "(kW/h)",
-	"об./кВт": "rev/kW",
-	"(часов)": "(hours)",
-	"л": "l",
-	"м": "m",
-	"см": "cm",
 }
 
 reservedValuesForDescriptions = {
@@ -442,9 +321,9 @@ reservedValuesForDescriptions = {
 	"MDX оснащен хорошим стандартным пакетом безопасности. В перечень ассистентов водителя входят обнаружение пешеходов, предупреждение о лобовом столкновении, автоматическое экстренное торможение, предупреждение о выезде с полосы движения и другие функции. Также Acura MDX оснащена полным комплектом подушек безопасности, включая передние подушки безопасности коленей.": "The MDX is equipped with a good standard security package. Driver assists include pedestrian detection, forward collision warning, automatic emergency braking, lane departure warning, and more. The Acura MDX is also equipped with a full complement of airbags, including front knee airbags.",
 
 	//LEXUS NX
-	"Модель укомплектована передовой системой безопасности Lexus Safety System. Качественная облицовка салона — характерная черта Lexus NX. Салон авто просторный и комфортный, кожаные сиденья имеют большое количество регулировок, обеспечивающих удобство в длительных поездках. Вместительность багажного отсека Lexus NX — 520 л.": "The model is equipped with the advanced Lexus Safety System. High-quality interior lining is a characteristic feature of the Lexus NX. The interior of the car is spacious and comfortable, leather seats have a large number of adjustments that provide convenience on long trips. Luggage compartment capacity Lexus NX — 520 liters",
+	"Модель укомплектована передовой системой безопасности Lexus Safety System.  Качественная облицовка салона — характерная черта Lexus NX. Салон авто просторный и комфортный, кожаные сиденья имеют большое количество регулировок, обеспечивающих удобство в длительных поездках. Вместительность багажного отсека Lexus NX — 520 л.": "The model is equipped with the advanced Lexus Safety System. High-quality interior lining is a characteristic feature of the Lexus NX. The interior of the car is spacious and comfortable, leather seats have a large number of adjustments that provide convenience on long trips. Luggage compartment capacity Lexus NX — 520 liters",
 	"Кроссовер имеет электрифицированную заднюю дверь и высокотехнологичную систему мультимедиа. Аудиосистема премиум-класса с десятью динамиками и 14-дюймовым цветным сенсорным дисплеем поддерживает Apple CarPlay и Android Auto.": "The crossover has an electrified tailgate and a high-tech multimedia system. Premium 10-speaker audio system with 14\" color touchscreen supports Apple CarPlay and Android Auto.",
-	"Lexus NX представлен в двух исполнениях: с передним или полным приводом. В кроссовер установлен рядный 4-цилиндровый бензиновый двигатель объемом 2 л, который выдает 207 л. с. при 243 Нм крутящего момента. Автомобиль может похвастаться плавностью движения, живой динамикой при разгоне и пониженным уровнем шума. Восьмиступенчатая АКПП обеспечивает плавное и точное переключение передач. Lexus NX имеет экономичный расход топлива, от 7 л на 100 км. Полноприводная версия легко управляется на шоссе и подходит для бездорожья.": "Lexus NX is presented in two versions: with front or all-wheel drive. The crossover has a 2-liter in-line 4-cylinder gasoline engine that produces 207 hp. With. at 243 Nm of torque. The car boasts a smooth ride, lively dynamics during acceleration and reduced noise levels. The eight-speed automatic transmission provides smooth and precise gear changes. Lexus NX has economical fuel consumption, from 7 liters per 100 km. The 4WD version is easy to handle on the highway and suitable for off-road use.",
+	"Lexus NX представлен в двух исполнениях: с передним или полным приводом. В кроссовер установлен рядный 4-цилиндровый бензиновый двигатель объемом 2 л, который выдает 207 л. с. при 243 Нм крутящего момента. Автомобиль может похвастаться плавностью движения, живой динамикой при разгоне и пониженным уровнем шума. Восьмиступенчатая АКПП  обеспечивает плавное и точное переключение передач. Lexus NX имеет экономичный расход топлива, от 7 л на 100 км. Полноприводная версия легко управляется на шоссе и подходит для бездорожья.": "Lexus NX is presented in two versions: with front or all-wheel drive. The crossover has a 2-liter in-line 4-cylinder gasoline engine that produces 207 hp. With. at 243 Nm of torque. The car boasts a smooth ride, lively dynamics during acceleration and reduced noise levels. The eight-speed automatic transmission provides smooth and precise gear changes. Lexus NX has economical fuel consumption, from 7 liters per 100 km. The 4WD version is easy to handle on the highway and suitable for off-road use.",
 
 	//LEXUS RX
 	"RX отличается стильным и качественным интерьером. Передняя панель имеет дизайнерские полосы под алюминий и отделку под натуральное дерево. Передние сиденья оснащены восемью регулировками и боковой поддержкой. В отделке салона использован мягкий пластик, гармонично подобранный по цвету и фактуре.": "RX has a stylish and high-quality interior. The front panel has designer aluminum stripes and natural wood finishes. The front seats are equipped with eight adjustments and lateral support. The interior trim used soft plastic, harmoniously matched in color and texture.",
@@ -486,11 +365,11 @@ reservedValuesForDescriptions = {
 	"Внедорожник имеет просторный салон с двумя или тремя рядами сидений. Передняя панель оснащена удобно развернутой в сторону водителя информативной консолью, в которую встроен сенсорный дисплей мультимедиа. Диагональ тачскрина идет в двух комплектациях — 8,4 или 10,1 дюйма. Аналоговый циферблат укомплектован крупным табло с нарисованным спидометром.": "The SUV has a spacious interior with two or three rows of seats. The front panel is equipped with an informative console conveniently deployed towards the driver, which has a built-in multimedia touch display. The touchscreen diagonal comes in two trim levels - 8.4 or 10.1 inches. The analog dial is equipped with a large scoreboard with a painted speedometer.",
 	"Линейка силовых агрегатов универсальна для всех моделей Durango. Внедорожники комплектуются шестицилиндровым V-образным двигателем на 3,6 л мощностью в 299 л. с. с 353 Нм крутящего момента. В дополнение к мотору идет стандартная 8-скоростная АКПП.": "The range of powertrains is universal for all Durango models. SUVs are equipped with a 3.6-liter six-cylinder V-engine with a capacity of 299 hp. With. with 353 Nm of torque. The engine is paired with a standard 8-speed automatic transmission.",
 
-	//AUDI Q4 E-TRON (2)
-	"Новый компактный электрический кроссовер Q4 e-tron оснащен платформой MEB от Volkswagen. Внешний вид модели исполнен в фирменном стиле Audi, а внутренний интерьер получил ряд обновлений, включая цифровую приборную панель и 10,1-дюймовый сенсорный дисплей MMI (с возможностью выбора опционального 11,6-дюймового дисплея).": "The new compact electric crossover Q4 e-tron is powered by Volkswagen's MEB platform. The exterior of the model is sporting Audi signature styling, while the interior has received a number of upgrades, including a digital instrument cluster and a 10.1-inch MMI touchscreen display (with a choice of an optional 11.6-inch display).",
-	"Особенностью Q4 e-tron является наличие проекционного дисплея с эффектом дополненной реальности, а также голосового ассистента.": "A feature of the Q4 e-tron is the presence of a projection display with the effect of augmented reality, as well as a voice assistant.",
-	"Кроссовер предлагается в нескольких вариантах. Базовая модель, Q4 35 E-tron, оснащена задним электромотором мощностью 170 л. с. и батареей емкостью 52 кВтч. Ее запас хода составляет 335 км, а разгон до 100 км/ч занимает 9 секунд. Вариант Q4 40 E-tron имеет тот же электромотор, но с мощностью 204 л. с., и способен разгоняться до 100 км/ч за 8,5 секунды. Благодаря батарее на 77 кВт*ч автомобиль может проехать до 508 км на одной подзарядке.": "The crossover is offered in several variants. The base model, the Q4 35 E-tron, has a 170 hp rear electric motor. With. and a 52 kWh battery. Its power reserve is 335 km, and acceleration to 100 km/h takes 9 seconds. The Q4 40 E-tron variant has the same electric motor, but with 204 horsepower. with., and is capable of accelerating to 100 km / h in 8.5 seconds. Thanks to the 77 kWh battery, the car can travel up to 508 km on a single charge.",
-	"В модели Q4 50 E-tron добавлен передний электромотор, общая мощность которого составляет 299 л. с. Автомобиль способен разгоняться до 100 км/ч за 6,2 секунды. Запас хода этой версии составляет 475 км при использовании батареи такой же емкости (77 кВт*ч).": "The Q4 50 E-tron adds a front electric motor with a total output of 299 hp. With. The car is capable of accelerating to 100 km / h in 6.2 seconds. The power reserve of this version is 475 km when using the same capacity battery (77 kWh).",
+	//AUDI Q4 E-TRON
+	"Автомобиль Audi Q4 e-tron — электрический кроссовер класса К2 с задним или полным приводом, созданный на основе платформы MEB от Volkswagen. Это премиальный автомобиль, аналогичный моделям Skoda Enyaq iV и Volkswagen ID.4.": "The Audi Q4 e-tron is an electric K2 class crossover with rear or all-wheel drive, based on the MEB platform from Volkswagen. This is a premium car similar to the Skoda Enyaq iV and Volkswagen ID.4.",
+	"В салоне вы увидите самый большой сенсорный экран, который Audi когда-либо устанавливала в своих автомобилях, — диагональю 11,6 дюйма. Кроме того, в автомобиле есть сенсорный экран 10,1 дюйма, который уже стал стандартом в последних автомобилях бренда.": "In the cabin, you'll see the largest touchscreen Audi has ever installed in a car, measuring 11.6 inches. In addition, the car has a 10.1-inch touch screen, which has already become standard in the latest vehicles of the brand.",
+	"Большинство физических кнопок заменены на сенсорные кнопки с тактильной обратной связью, которые можно использовать для прокрутки списков на дисплее. Однако кабина Q4 e-tron по-прежнему украшена физическими кнопками, которых нет в некоторых других электромобилях.": "Most of the physical buttons have been replaced with touch buttons with tactile feedback that can be used to scroll through lists on the display. However, the cockpit of the Q4 e-tron is still adorned with physical buttons that some other EVs don't have.",
+	"Q4 e-tron — это первая модель Audi, где есть проекционный дисплей дополненной реальности. Он предоставляет в режиме онлайн информацию об автомобиле.": "The Q4 e-tron is the first Audi model to feature an augmented reality head-up display. It provides online vehicle information.",
 
 	//AUDI Q8 E-TRON
 	"Внутреннее пространство нового Audi Q8 e-tron впечатляет заботой об экологии, а именно — использованием переработанных материалов, например, коврового покрытия и декоративной вставки из переработанного пластика над дисплеем.": "The interior of the new Audi Q8 e-tron impresses with its environmental friendliness, namely the use of recycled materials, such as carpeting and a decorative insert made of recycled plastic above the display.",
@@ -499,7 +378,7 @@ reservedValuesForDescriptions = {
 
 	//AUDI Q8 SPORTBACK E-TRON
 	"Рестайлинговый Q8 отличается от предыдущей версии слегка измененными бамперами, новой фальшрешеткой, на которой красуются обновленный логотип и светодиодная полоса, а также новым дизайном колесных дисков.": "The restyled Q8 differs from the previous version with slightly modified bumpers, a new false grille, which flaunts an updated logo and LED strip, as well as a new design of rims.",
-	"Обновленная медиасистема оснащена точкой интернет-доступа. Выбор материалов отделки салона стал шире за счёт популярной экологичной ткани, изготовленной из переработанных пластиковых бутылок. В список дополнительного оборудования теперь входят: вентилируемые сиденья, матричные фары, 4-зонный климат-контроль и проекционный монитор. В некоторых странах вместо боковых зеркал за доплату можно заказать камеры. Audi Q8 Sportback получил новые регулировки ездовой электроники и рулевого управления, а также дистанционный парковщик, функционирующий через смартфон.": "The updated media system is equipped with an Internet access point. The choice of interior materials has been expanded with a popular eco-friendly fabric made from recycled plastic bottles. The list of additional equipment now includes: ventilated seats, matrix headlights, 4-zone climate control and a projection monitor. In some countries, cameras can be ordered instead of side mirrors for a surcharge. The Audi Q8 Sportback received new adjustments for driving electronics and steering, as well as a remote valet operating via a smartphone.",
+	"Обновленная медиасистема оснащена точкой интернет-доступа. Выбор материалов отделки салона стал шире за счёт популярной экологичной ткани, изготовленной из переработанных пластиковых бутылок. В список дополнительного оборудования теперь входят: вентилируемые сиденья, матричные фары, 4-зонный климат-контроль и  проекционный монитор. В некоторых странах вместо боковых зеркал за доплату можно заказать камеры. Audi Q8 Sportback получил новые регулировки ездовой электроники и рулевого управления, а также дистанционный парковщик, функционирующий через смартфон.": "The updated media system is equipped with an Internet access point. The choice of interior materials has been expanded with a popular eco-friendly fabric made from recycled plastic bottles. The list of additional equipment now includes: ventilated seats, matrix headlights, 4-zone climate control and a projection monitor. In some countries, cameras can be ordered instead of side mirrors for a surcharge. The Audi Q8 Sportback received new adjustments for driving electronics and steering, as well as a remote valet operating via a smartphone.",
 	"Базовая модификация 50 e-tron получила увеличенную до 340 л. с. мощность. Емкость батареи составляет 89 кВт*ч, а запас хода — 505 км по циклу WLTP. Время разгона до 100 км/ч осталось прежним и составляет 6 секунд.": "The basic modification of the 50 e-tron received an increase to 340 hp. With. power. The battery capacity is 89 kWh, and the range is 505 km on the WLTP cycle. Acceleration time to 100 km/h remains the same and is 6 seconds.",
 
 	//AUDI Q5
@@ -1117,7 +996,7 @@ reservedValuesForDescriptions = {
 
 	//CHERY BIG ANT
 	"Big Ant — семейный электромобиль. Его дизайн имеет сходство с остальными автомобилями бренда, но при этом содержит новые элементы, которые появятся во всех будущих моделях.": "Big Ant is a family electric car. Its design is similar to the rest of the brand's cars, but it contains new elements that will appear in all future models.",
-	"Особенность этой модели — алюминиевый кузов и база на платформе Chery LFS. Ant имеет II уровень автопилота, который позволяет автоматически выполнять базовые операции, но с обязательным водительским контролем.": "A feature of this model is an aluminum body and a base on the Chery LFS platform. Ant has a level II autopilot that allows you to automatically perform basic operations, but with mandatory driver control.",
+	"Особенность этой модели — алюминиевый кузов и база на платформе Chery LFS. Ant имеет II  уровень автопилота, который позволяет автоматически выполнять базовые операции, но с обязательным водительским контролем.": "A feature of this model is an aluminum body and a base on the Chery LFS platform. Ant has a level II autopilot that allows you to automatically perform basic operations, but with mandatory driver control.",
 	"Большой выбор цветов, качественные материалы салона и просторное внутреннее пространство делают Big Ant удобной и стильной машиной. Она оснащена системой Huawei Harmony и технологией автономного управления L2.99. Для распознавания владельца используется инновационная технология FaceID.": "A wide range of colors, high-quality interior materials and a spacious interior make the Big Ant a comfortable and stylish car. It is equipped with Huawei Harmony system and L2.99 autonomous control technology. To recognize the owner, the innovative FaceID technology is used.",
 
 	//AITO — M5
@@ -1195,7 +1074,7 @@ function translateToEN() {
         }
     }
 
-    let specificationDiv = document.getElementsByClassName("characteristics-car-title-wrapper")[0];
+    let specificationDiv = document.getElementsByClassName("car-characteristics-title-wrapper")[0];
     let specificationTitle = specificationDiv.getElementsByTagName("h2")[0];
     for (const [key, value] of Object.entries(reservedValues)) {
         if (specificationTitle.textContent.includes(key)) {
