@@ -1195,19 +1195,21 @@ function translateToEN() {
         }
     }
 
-    let tableTitleTab1 = document.getElementsByClassName("characteristics-car-title-wrapper");
+    let tableTitleDiv1 = document.getElementsByClassName("characteristics-car-title-wrapper");
+    let tableTitleTab1 = tableTitleDiv1.getElementsByTagName("h2");
     for (let i = 0; i < tableTitleTab1.length; i++) {
         for (const [key, value] of Object.entries(reservedValues)) {
-            while (tableTitleTab1[i].innerHTML.includes(key)) {
-                tableTitleTab1[i].innerHTML = tableTitleTab1[i].innerHTML.replace(key, value);
+            while (tableTitleTab1[i].textContent.includes(key)) {
+                tableTitleTab1[i].textContent = tableTitleTab1[i].textContent.replace(key, value);
             }
         }
     }
-    let tableTitleTab2 = document.getElementsByClassName("car-characteristics-title-wrapper");
+    let tableTitleDiv2 = document.getElementsByClassName("car-characteristics-title-wrapper");
+    let tableTitleTab2 = tableTitleDiv2.getElementsByTagName("h2");
     for (let i = 0; i < tableTitleTab2.length; i++) {
         for (const [key, value] of Object.entries(reservedValues)) {
-            while (tableTitleTab2[i].innerHTML.includes(key)) {
-                tableTitleTab2[i].innerHTML = tableTitleTab2[i].innerHTML.replace(key, value);
+            while (tableTitleTab2[i].textContent.includes(key)) {
+                tableTitleTab2[i].textContent = tableTitleTab2[i].textContent.replace(key, value);
             }
         }
     }
@@ -1230,16 +1232,16 @@ function translateToEN() {
     
     let insideTable = document.getElementsByClassName("characteristics-car-rich-text");
     for (let i = 0; i < insideTable.length; i++) {
-        for (const [key, value] of Object.entries(reservedValuesForTable)) {
-            while (insideTable[i].innerHTML.includes(key)) {
-                insideTable[i].innerHTML = insideTable[i].innerHTML.replace(key, value);
-            }
-        }
         for (const [key, value] of Object.entries(reservedTableRowTitles)) {
             while (insideTable[i].innerHTML.includes(key)) {
                 insideTable[i].innerHTML = insideTable[i].innerHTML.replace(key, value);
             }
         }
+        for (const [key, value] of Object.entries(reservedValuesForTable)) {
+            while (insideTable[i].innerHTML.includes(key)) {
+                insideTable[i].innerHTML = insideTable[i].innerHTML.replace(key, value);
+            }
+        }       
     }
 
     let availableComplectations = document.getElementsByClassName("car-tab-options-title");
