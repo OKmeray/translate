@@ -1195,7 +1195,7 @@ function translateToEN() {
         }
     }
 
-    let tableTitleDiv1 = document.getElementsByClassName("characteristics-car-title-wrapper");
+    let tableTitleDiv1 = document.getElementsByClassName("characteristics-car-title-wrapper")[0];
     let tableTitleTab1 = tableTitleDiv1.getElementsByTagName("h2");
     for (let i = 0; i < tableTitleTab1.length; i++) {
         for (const [key, value] of Object.entries(reservedValues)) {
@@ -1204,7 +1204,7 @@ function translateToEN() {
             }
         }
     }
-    let tableTitleDiv2 = document.getElementsByClassName("car-characteristics-title-wrapper");
+    let tableTitleDiv2 = document.getElementsByClassName("car-characteristics-title-wrapper")[0];
     let tableTitleTab2 = tableTitleDiv2.getElementsByTagName("h2");
     for (let i = 0; i < tableTitleTab2.length; i++) {
         for (const [key, value] of Object.entries(reservedValues)) {
