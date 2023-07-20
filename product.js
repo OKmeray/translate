@@ -1332,13 +1332,13 @@ function translateToEN() {
 function translateDescriptions() {
     let fullContent = document.getElementsByClassName("car-tab-left-content")[0];
     let paragraphs = fullContent.getElementsByTagName("p");
-    // for (let i = 0; i < paragraphs.length; i++) { 
-    //     for (const [key, value] of Object.entries(reservedValuesForDescriptions)) {
-    //         while (paragraphs[i].innerHTML.includes(key)) {
-    //             paragraphs[i].innerHTML = paragraphs[i].innerHTML.replace(key, value);
-    //         }
-    //     }
-    // }
+    for (let i = 0; i < paragraphs.length; i++) { 
+        for (const [key, value] of Object.entries(reservedValuesForDescriptions)) {
+            while (paragraphs[i].innerHTML.includes(key)) {
+                paragraphs[i].innerHTML = paragraphs[i].innerHTML.replace(key, value);
+            }
+        }
+    }
     if (document.URL == "https://autolux.webflow.io/product/lexus-nx?lang=en") {
         let fullContent = document.getElementsByClassName("car-tab-left-content")[0];
         let paragraphs = fullContent.getElementsByTagName("p");
