@@ -153,13 +153,13 @@ const catalogValues = {
 
 // translateDynamic(); not an optimization
 
-if (document.URL.includes("eng")) {
+if (document.URL.includes("-en")) {
     console.log(document.URL);
     translateToEN();
 }
 
 function translateToEN() {
-    translateDynamic();
+    translateDescriptions();
 
     // бензинивий / гібрид / електро
     let fuel_des = document.getElementsByClassName('card-fuel');
@@ -184,31 +184,11 @@ function translateToEN() {
             reservedValues[more[i].textContent] :
             more[i].textContent);
     }
-
-    // let dropdownReservedValues = {
-    //     "Отсутствуєт": "Absent",
-    //     "Автомат/Ручная": "Automatic/Manual",
-    //     "больше": "more than",
-    //     "до": "up to",
-    // }
-    // let dropdownsCheckboxes = document.getElementsByClassName("dropdown-list-text");
-    // for (let i = 0; i < dropdownsCheckboxes.length; i++) {
-    //     for (const [key, value] of Object.entries(dropdownReservedValues)) {
-    //         while (dropdownsCheckboxes[i].innerHTML.includes(key)) {
-    //             dropdownsCheckboxes[i].innerHTML = dropdownsCheckboxes[i].innerHTML.replace(key, value);
-    //         }
-    //     }
-    // }
-
-    // let hiddenCards = document.getElementsByClassName("card-hidden");
-    // for (let i = 0; i < hiddenCards.length; i++) {
-    //     for (const [key, value] of Object.entries(dropdownReservedValues)) {
-    //         while (hiddenCards[i].innerHTML.includes(key)) {
-    //             hiddenCards[i].innerHTML = hiddenCards[i].innerHTML.replace(key, value);
-    //         }
-    //     }
-    // }
-
+    let aLinks = document.getElementsByClassName('blue-gradient');
+    console.log(aLinks);
+    for (let i = 2; i < aLinks.length; i++) {
+        aLinks[i].setAttribute("href", aLinks[i].getAttribute("href") + "?lang=en");        
+    }
 
     let descriptionsEN = document.getElementsByClassName("card-main-discription-text-en");
     let descriptionsRU = document.getElementsByClassName("card-discription-text");
@@ -220,8 +200,8 @@ function translateToEN() {
     
 }
 
-function translateDynamic() {
-    let descriptions = document.getElementsByClassName('card-main-discription-text-en');
+function translateDescriptions() {
+  let descriptions = document.getElementsByClassName('card-main-discription-text-en');
 
     for (let i = 0; i < descriptions.length; i++) {
         // .replace(/^\s+|\s+$/g, '').replace(/\s\s+/g, ' ') removes unnecessary spaces
@@ -229,36 +209,49 @@ function translateDynamic() {
 
         if (text in catalogValues) {   
             descriptions[i].textContent = catalogValues[text];
-            continue;
         }
-        
-        const xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://localhost:5000/translate", true);
-        xhr.setRequestHeader("Content-Type", "application/json");
-
-        xhr.onload = function () {
-            if (xhr.status === 200) {
-
-                const response = JSON.parse(xhr.responseText);
-                descriptions[i].textContent = response.translatedText;
-                
-                if (descriptions[i].textContent.includes('. .')) {
-                    descriptions[i].textContent = descriptions[i].textContent.replace('. .', '.');
-                }
-            } else {
-                // error
-            }
-            
-        };
-
-        const requestBody = JSON.stringify({
-            q: text,
-            source: "ru",
-            target: "en",
-            format: "text",
-            //api_key: "", // Specify your API key here
-        });
-
-        xhr.send(requestBody);
     }
 }
+
+// function translateDynamic() {
+//     let descriptions = document.getElementsByClassName('card-main-discription-text-en');
+
+//     for (let i = 0; i < descriptions.length; i++) {
+//         // .replace(/^\s+|\s+$/g, '').replace(/\s\s+/g, ' ') removes unnecessary spaces
+//         let text = descriptions[i].textContent.replace(/^\s+|\s+$/g, '').replace(/\s\s+/g, ' '); 
+
+//         if (text in catalogValues) {   
+//             descriptions[i].textContent = catalogValues[text];
+//             continue;
+//         }
+        
+//         const xhr = new XMLHttpRequest();
+//         xhr.open("POST", "http://localhost:5000/translate", true);
+//         xhr.setRequestHeader("Content-Type", "application/json");
+
+//         xhr.onload = function () {
+//             if (xhr.status === 200) {
+
+//                 const response = JSON.parse(xhr.responseText);
+//                 descriptions[i].textContent = response.translatedText;
+                
+//                 if (descriptions[i].textContent.includes('. .')) {
+//                     descriptions[i].textContent = descriptions[i].textContent.replace('. .', '.');
+//                 }
+//             } else {
+//                 // error
+//             }
+            
+//         };
+
+//         const requestBody = JSON.stringify({
+//             q: text,
+//             source: "ru",
+//             target: "en",
+//             format: "text",
+//             //api_key: "", // Specify your API key here
+//         });
+
+//         xhr.send(requestBody);
+//     }
+// }
