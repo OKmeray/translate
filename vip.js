@@ -179,10 +179,12 @@ function translateToEN() {
 
     // детальніше
     let more = document.getElementsByClassName('btn-text');
+    let aLinks = document.getElementsByClassName('blue-gradient');
     for (let i = 0; i < more.length; i++) {
         more[i].textContent = (more[i].textContent in reservedValues ?
             reservedValues[more[i].textContent] :
             more[i].textContent);
+            aLinks[i].setAttribute("href", aLinks[i].getAttribute("href") + "?lang=en");
     }
 
     let descriptionsEN = document.getElementsByClassName("vip-item-text-en");
